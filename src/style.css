@@ -1,16 +1,25 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1;
+    background-color:rgb(50, 58, 83);
+
 }
 
 header {
-    background-color: #333;
+    background-color: rgb(50, 58, 83);
     color: white;
     padding: 1rem;
     text-align: center;
+    /*padding: 10px ;*/
+    /*position: relative;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    margin: 0 auto;
+
 }
 
 header nav ul {
@@ -20,7 +29,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 6px;
 }
 
 header nav ul li a {
@@ -28,31 +37,225 @@ header nav ul li a {
     text-decoration: none;
 }
 
-section {
-    padding: 2rem;
+#section {
+    padding: 1.5rem;
     margin: 1rem;
 }
 
+/* Project Section */
 .project {
-    margin: 1rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    background-color:rgb(50, 58, 83);
+    padding: 1rem;
+    border-radius: 5px;
+    color:white;
+    /*width: 90%;*/
+}
+.projects_p:hover::before{
+    content: '/>';
+    color: orange;
+    position: absolute;
+    right: 20px;
 }
 
-button {
-    background-color: #333;
+.projects__p:hover::after{
+    content: '<';
+    color: orange;
+    position: absolute;
+    left: 20px;
+}
+.project .image {
+    border:1px solid red;
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    flex-wrap: wrap;
+    /* The following lines were fixed from their original version.
+       Original error due to nested comments has been corrected.
+    */
+    /* flex-wrap: wrap; Allows images to wrap to the next row */
+    /* gap: ; Space between the images (set an appropriate value if needed) */
+    /*justify-content: space-between; !* Distribute images evenly *!*/
+
+}
+.card{
+    width: 33%;
+    height: 40%;
+    border-radius: 5px;
+    /*background-color: rgb(39, 39, 121);*/
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align:left;
     color: white;
-    border: none;
-    padding: 0.5rem 1rem;
+    /*position: relative;*/
+    bottom: 0;
+    transition: bottom 0.5s;
+}
+
+.project .image a {
+    width:50%; /* Each image takes approx. 24.5% of the row */
+    text-align: left; /* Centers the text under the image */
+    text-decoration: none;
+    color: white;
+}
+
+.project .image img {
+    width: 50%; /* Image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 5px; /* Adds rounded corners */
+    background-color: rgb(50, 58, 83); /* Fallback color if image fails to load */
+    margin-bottom: 0.5rem;
+}
+.project .image img:hover {
+    opacity: 0.5;
     cursor: pointer;
 }
-
-button:hover {
-    background-color: #555;
+.project .image a:hover {
+    color: orange;
+}
+.project .image a:hover .card{
+    bottom: 1rem;
+}
+#contact {
+    text-align: left;
+    padding: 2rem;
+    background-color: rgb(50, 58, 83);
+    color: white;
 }
 
+.whatsapp-btn{
+    display: inline-block;
+    navbutton_background_color: #007BFF;
+    color : white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.phone-btn{
+    display: inline-flex;
+    navbutton_background_color: #007BFF;
+    color : white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.phone_btn:hover{
+    cover:blue;
+    cursor:pointer;
+}
+.email-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    navbutton_background_color: #007BFF; /* LinkedIn blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.linkedin-btn{
+    navbutton_background_color: #007BFF;
+    color : white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+.github{
+    navbutton_background_color: #007BFF;
+    color : white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+
+/* Footer */
 footer {
     text-align: center;
-    background-color: #f4f4f4;
-    color: #555555;
+    background-color: rgb(50, 58, 0);
+    color: #555;
     padding: 1rem;
     margin-top: 2rem;
+}
+footer:hover {
+    color: orange;
+    cursor: pointer;
+
+}
+.icon {
+    width: 20px;
+    height: 40px;
+    padding: 0 4%;
+    color: Black;
+}
+#about {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Spaces elements apart */
+}
+
+#about_img {
+    max-width: 350px; /* Adjusts image width */
+    height: auto;
+    margin-right: 20px; /* Adds spacing */
+    padding: 7% 0;
+    /*margin-bottom: 30px;*/
+    margin-right:20px;
+}
+
+#about_text{
+    border: solid 5px;
+    color: white;
+    border:1px solid blue;
+
+}
+#about div {
+    flex: 1; /* Makes text content flexible */
+}
+p{
+    color: white;
+}
+@media(max-width:1770px){
+    header{
+        padding: 22px 4%;
+    }
+    .icons{
+        padding: 0 4%;
+    }
+    .scroll{
+        right: 4%;
+    }
+}
+@media(max-width:1370px){
+    .icons{
+        display: none;
+    }
+    section{
+        padding: 0 4%;
+    }
+}
+@media(max-width:950px){
+    #welcome-sectionicon{
+        display: block;
+    }
+}
+@media(max-width:480px){
+    #welcome-sectionicon{
+        display: block;
+    }
 }

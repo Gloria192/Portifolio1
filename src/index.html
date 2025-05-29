@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,45 +18,96 @@
         </ul>
     </nav>
 </header>
-
 <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Gloria MUTUYIMANA , a passionate Web fundamental Development and
-        Backend developer constantly striving to improve and deliver top-notch code.</p>
+    <img  id="about_img" src="photo/img.png" alt="Photo of Gloria">
+    <div id="about-text">
+        <h2>Hello! I'm Gloria MUTUYIMANA</h2>
+        <p>Hello! I'm Gloria Mutuyimana 👋 A passionate Web and Backend Developer, dedicated to writing clean,
+        <p> efficient, and scalable code to create beautiful and functional web applications.</p>
+        <p>I specialize in full-stack development, with expertise in HTML, CSS, and JavaScript for front-end
+        <p>design, alongside backend technologies that ensure robust and seamless system performance.</p>
+        <p>Currently, I am pursuing a Bachelor’s Degree in Business Information Technology at the University
+        <p> of Kigali, strengthening my expertise in software architecture, databases, and business-driven tech
+        solutions.</p>
+        <p>I am actively seeking a full-time position in the tech industry, where I can apply my skills, grow<p> professionally, and contribute to innovative
+        digital solutions that merge technology and business strategy.</p></p>
+        <p> </p>
+     </div>
 </section>
 
 <section id="projects">
     <h2>My Projects</h2>
     <div class="project">
-        <h3>Project 1: Java Sorting Algorithm</h3>
+        <h3> My  Project </h3>
+        <div class="image">
+            <div class="card">
+                <a href="https://documentation2.netlify.app/">Documentation</a>
+                <img src="photo/documentation.png" alt="Documentation" />
+            </div>
+            <div class="card">
+                <a href="https://https://buildtribute.netlify.app/"></a>
+                <img src="photo/buildattribute.jpg" alt="Build Attribute" />Build Attribute
+            </div>
 
-        <a href="https://documentation2.netlify.app/">
-            <img src="photo/documentation.png">Documentation
-            <img src="photo/buildattribute.jpg"> Build attribute
-        </a>
+            <div class="card">
+                <a href="https://animations12.netlify.app/"></a>
+                <img src="photo/animation.png" alt="Animations" />Animations
+            </div>
+              <div class="card">
+                <a href="https://https://buildtribute.netlify.app/"></a>
+                <img src="photo/documentation.png" alt="Survey" />Survey
+              </div>
 
-        <p>A project showcasing advanced sorting methods in Java. [<a href="#">View Code</a>]</p>
+<!--        <p>-->
+<!--            A project showcasing advanced sorting methods in Java. [<a href="#">View Code</a>]-->
+<!--        </p>-->
     </div>
-    <div class="project">
-        <h3>Project 2: Student Manager</h3>
-        <p>An application for managing student records effectively. [<a href="#">View Code</a>]</p>
-    </div>
-</section>
+<!--    <div class="project">-->
+<!--        <h3>Project 2: Student Manager</h3>-->
+<!--        <p>-->
+<!--            An application for managing student records effectively. [<a href="#">View Code</a>]-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
 
 <section id="contact">
     <h2>Contact</h2>
-    <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <div id="contactForm">
+        <h2>Socia Media</h2>
+        <!-- Changed from <a> to <p> for non-clickable text -->
+<!--        <p>Name: Gloria MUTUYIMANA</p>-->
+        <a href="https://wa.me/0780263853" target="_blank" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+        </a>
+        <a href="tel:+250788123456" class="phone-btn">
+            <i class="fa-solid fa-phone"></i> Call Me :+250780683853
+        </a>
+        <a href="mailto:mutuyegloria@gmail.com" class="email-btn">
+            <i class="fa-solid fa-at"></i> Email
+        </a>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <a href="https://www.linkedin.com/in/gloria-mutuyimana-18a769258" target="_blank" class="linkedin-btn">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Gloria192" target="_blank" class="github">
+            <i class="fa-brands fa-github"></i> MY Github
+        </a>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+<!--        <div id="icons">-->
+<!--            <i class="fa-brands fa-square-facebook"></i> facebook-->
 
-        <button type="submit">Send</button>
-    </form>
+<!--            <i class="fa-brands fa-twitter"></i> Twitter-->
+<!--            <i class="fa-solid fa-at"></i> send a mail-->
+<!--            &lt;!&ndash; Unused icon for a mobile call is commented out &ndash;&gt;-->
+<!--        </div>-->
+        <div id="icons">
+        <h2>Skills</h2>
+   HTML <input type="text" placeholder="80%">
+        Css <input type="text" placeholder="70%">
+         Javascript <input type="text" placeholder="50%">
+        java <input type="text" placeholder="50%">
+         </div>
+    </div>
 </section>
 
 <footer>
