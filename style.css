@@ -1,0 +1,250 @@
+/* Section Styling */
+#home {
+    position: relative;
+    height: 200vh;
+    background: url('photo/image3.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* dark overlay for readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Heading and Paragraph */
+#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* CTA Button */
+.home-btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    color: #f39c12;
+    background-color: #00b456;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #0145;
+}
+
+
+
+
+/* Navbar Styles */
+nav {
+    background: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end; /* Aligns the navbar to the left */
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Keeps items horizontal */
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+/* About Section */
+#about {
+    display: flex;
+    align-items: center; /* Aligns content vertically */
+    justify-content: space-between; /* Places text on left and image on right */
+    padding: 50px;
+    background: rgb(24, 5, 5);
+}
+
+/* About Text on Left */
+.about-text {
+    max-width: 50%;
+    text-align: left;
+    color:  white ;
+    font-size: 20px; /* Increase font size */
+    line-height: 1.6; /* Improve readability */
+}
+
+
+
+/* Image on Right */
+.about-image {
+    max-width: 40%;
+}
+
+.about-image img {
+    width: 250px;
+    border-radius: 70%;
+    width: 300px;
+    height: auto;
+}
+
+/* Skills Section Styling */
+#skills {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #f7fafd, #ffffff);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#skills h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#skills h2::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #00bcd4;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.skill {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    width: 260px;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.skill h3 {
+    font-size: 20px;
+    color: #005792;
+    margin-bottom: 15px;
+}
+
+.skill img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+#projects {
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #0d47a1;
+    position: relative;
+}
+
+#projects h2::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #00bcd4;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card a {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d47a1;
+    text-decoration: none;
+    background-color: #e1f5fe;
+    border-top: 1px solid #b3e5fc;
+}
+
+.project-card a:hover {
+    background-color: #b3e5fc;
+    color: #004c8c;
+}
